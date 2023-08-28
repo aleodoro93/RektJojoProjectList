@@ -1,0 +1,19 @@
+{
+  "name": "rektjojoprojectlist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleodoro93/RektJojoProjectList.git"
+  },
+  "author": "aleodoro93",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aleodoro93/RektJojoProjectList/issues"
+  },
+  "homepage": "https://github.com/aleodoro93/RektJojoProjectList#readme"
+}
