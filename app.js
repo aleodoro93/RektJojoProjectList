@@ -22,4 +22,8 @@ class ListaPropriedades {
             }
         })
     }
+    addPropCss(propriedades) {
+        this.propCss.push(propriedades);
+    }
+
 }
