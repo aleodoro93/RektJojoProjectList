@@ -9,4 +9,17 @@ class ListaPropriedades {
             output: ProcessingInstruction.stdout
         });
     }
+
+    start() {
+        console.log('Digite a propriedade CSS, ou digite "sair" para encerrar');
+        this.rl.on('line', input => {
+            if (input.toUperCase() === 'sair'){
+                this.rl.close();
+
+            }else {
+                
+
+            }
+        })
+    }
 }
