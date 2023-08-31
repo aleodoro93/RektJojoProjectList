@@ -6,6 +6,8 @@ import chalk from "chalk"
 class ListaPropriedades {
     constructor() {
         this.propCss = [];
+        
+        
         this.rl = createInterface({
             input: process.stdin,
             output: process.stdout
@@ -13,7 +15,13 @@ class ListaPropriedades {
     }
 
     começa() {
-        console.log('Digite a propriedade CSS, ou digite "sair" para encerrar');
+        console.log(chalk.blue("              ||Seja bem-vindo(a) ao REKTjojo insert's||"))
+        
+        console.log(chalk.yellow("          Lembre-se de digitar apenas uma propriedade por vez!"))
+        
+        console.log("------------------------------------------------------------------------------------------------")
+        console.log("| Digite a propriedade CSS que deseja inserir na lista ou digite 'sair' para encerrar o programa |");
+        console.log("-------------------------------------------------------------------------------------------------")
         this.rl.on('line', input => {
             const sair = input.toLowerCase() === 'sair'
 
@@ -60,7 +68,7 @@ class ListaPropriedades {
     validaCampo(input) {
         const isNotNumber = isNaN(parseInt(input))
         const isNotEmpty = input.trim() != ""
-        const isValid = isNotNumber && isNotEmpty
+        const isValid = isNotNumber && isNotEmpty 
 
         if (!isValid) {
             console.log("Digite algo valido!")
@@ -71,4 +79,7 @@ class ListaPropriedades {
 
 const listaPropriedades = new ListaPropriedades();
 listaPropriedades.começa();
+
+
+
 
