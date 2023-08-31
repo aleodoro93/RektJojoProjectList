@@ -1,6 +1,7 @@
 import * as readline from 'node:readline/promises';
 import { stdin as input, stdout as output } from 'node:process'
 import { createInterface } from 'node:readline';
+import chalk from "chalk"
 
 class ListaPropriedades {
     constructor() {
@@ -24,16 +25,19 @@ class ListaPropriedades {
 
             if (isValid) {
                 this.addPropCss(input);
+                
             }
         })
         this.rl.on('close', () => {
             this.MostraNaTela();
-            console.log("programa encerrado!")
+            console.log(chalk.redBright("Programa encerrado!"))
+            console.log("Até mais")
         })
     }
 
     addPropCss(propriedades) {
         this.propCss.push(propriedades);
+        
     }
 
 
@@ -43,9 +47,9 @@ class ListaPropriedades {
         const AlinhadoCss = this.propCss.sort();
 
         if (verifLista){
-            console.log('A lista esta vazia!') 
+            console.log(chalk.red('A lista está vazia!'))
         } else {
-            console.log('Propriedades organizadas')
+            console.log(chalk.green('Propriedades organizadas'))
             AlinhadoCss.forEach(propriedades => console.log(propriedades));
         }
        
