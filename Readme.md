@@ -7,7 +7,7 @@ O projeto "Lista de Propriedades CSS" é uma aplicação interativa desenvolvida
 
 # Para rodar o projeto você precisara:
 Ter o Node.js instalado com a versão 18.17.1.  Você pode baixa-lo aqui: https://nodejs.org/en
-Microsfot Visual Studio Code.  Você pode baixa-lo aqui: https://code.visualstudio.com/
+Microsoft Visual Studio Code.  Você pode baixa-lo aqui: https://code.visualstudio.com/
 
 
  
