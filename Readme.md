@@ -7,8 +7,6 @@ O projeto "Lista de Propriedades CSS" é uma aplicação interativa desenvolvida
 
 # Para rodar o projeto você precisara:
 Ter o Node.js instalado com a versão 18.17.1.  Você pode baixa-lo aqui: https://nodejs.org/en
-
-
 Microsfot Visual Studio Code.  Você pode baixa-lo aqui: https://code.visualstudio.com/
 
 
@@ -24,10 +22,14 @@ Abra o terminal.
 
 Clone o repositório do projeto:
 
-```git clone https://github.com/aleodoro93/RektJojoProjectList```
+```
+git clone https://github.com/aleodoro93/RektJojoProjectList
+```
 
 para navegar na pasta do projeto utilize o comando:
-``` cd nome-da-pasta-do-projeto ```
+```
+cd nome-da-pasta-do-projeto
+```
 
 
 
@@ -42,14 +44,24 @@ Abra o terminal novamente.
 Certifique-se de estar na pasta do projeto.
 
 Execute o seguinte comando para instalar as dependências:
-```npm install```
+```
+npm install
+```
 
 
 
 
 ## Demonstração
 
-inicie o codigo com ```npm start``` ou ```node ./app.js``
+inicie o codigo com 
+```
+npm start
+``` 
+ou
+ ```
+ node ./app.js
+```
+
 ![exemplo 1](./src/img/print%201.png)
 
 Após isso digite a propriedade que será inserida na lista e aperte ENTER(*lembre-se de digitar apenas um por vez)
